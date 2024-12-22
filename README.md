@@ -7,11 +7,13 @@ Here’s a list of commonly used Ansible commands along with example playbooks a
 1. **Ping all hosts in the inventory file**
    ```bash
    ansible all -i inventory.yml -m ping
+   ansible all -m ping
    ```
 
 2. **Execute a shell command on all hosts**
    ```bash
    ansible all -i inventory.yml -m shell -a "uptime"
+   ansible all -m shell -a "uptime"
    ```
 
 3. **Run a playbook**
@@ -37,6 +39,7 @@ Here’s a list of commonly used Ansible commands along with example playbooks a
 7. **Gather facts about a host**
    ```bash
    ansible all -i inventory.yml -m setup
+   ansible all -m setup
    ```
 
 8. **Run a playbook on a specific host**
